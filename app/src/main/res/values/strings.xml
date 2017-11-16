@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">InClass10</string>
+    <string name="buttonSignupLabel">Sign up</string>
+    <string name="buttonCancelLabel">Cancel</string>
+    <string name="passwordHint">Password</string>
+    <string name="hintFullname">Fullname</string>
+    <string name="hintEmail">Email</string>
+    <string name="cancelButtonLabel">Cancel</string>
+    <string name="nameDetailLabel">Name</string>
+    <string name="buttonCloseLabel">Close</string>
+    <string name="loginActivityTitle">Login</string>
+    <string name="signupActivityTitle">Sign Up</string>
+
+    <string name="editNameHint">Name</string>
+    <string name="editEmailHint">Email</string>
+    <string name="department_1">SIS</string>
+    <string name="department_2">CS</string>
+    <string name="department_3">BIO</string>
+    <string name="textDepartmentLabel">Department:</string>
+    <string name="submitButtonLabel">Submit</string>
+
+    <string name="textNameDisplayLabel">Name:</string>
+    <string name="textEmailDisplayLabel">Email:</string>
+    <string name="select_new_avatar_label">Select the Avatar</string>
+    <string name="mainActivityTitle">Main Activity</string>
+    <string name="contactListActivityTitle">Contacts</string>
+    <string name="newContactActivityTitle">Create New Contact</string>
+    <string name="selectAvatarActivityTitle">Select Avatar</string>
+    <string name="emailInvalidError">Please provide a valid email address</string>
+</resources>

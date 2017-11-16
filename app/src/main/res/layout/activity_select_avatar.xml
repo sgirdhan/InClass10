@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sharangirdhani.inclass10.SelectAvatarActivity">
+
+    <TextView
+        android:id="@+id/textViewAvatarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/select_new_avatar_label"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/avatar_f_1"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_below="@+id/textViewAvatarLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="buttonF1"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/avatar_f_2"
+        android:layout_below="@+id/imageButtonF1"
+        android:layout_alignLeft="@+id/imageButtonF1"
+        android:layout_alignStart="@+id/imageButtonF1"
+        android:layout_marginTop="13dp"
+        android:onClick="buttonF2"        />
+
+    <ImageButton
+        android:id="@+id/imageButtonF3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/avatar_f_3"
+        android:layout_below="@+id/imageButtonF2"
+        android:layout_alignLeft="@+id/imageButtonF2"
+        android:layout_alignStart="@+id/imageButtonF2"
+        android:layout_marginTop="16dp"
+        android:onClick="buttonF3"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonM1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/avatar_m_1"
+        android:layout_alignTop="@+id/imageButtonF1"
+        android:layout_toRightOf="@+id/imageButtonF2"
+        android:layout_toEndOf="@+id/imageButtonF2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:onClick="buttonM1"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/avatar_m_2"
+        android:layout_above="@+id/imageButtonF3"
+        android:layout_alignLeft="@+id/imageButtonM1"
+        android:layout_alignStart="@+id/imageButtonM1"
+        android:onClick="buttonM2"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonM3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonM2"
+        android:layout_alignStart="@+id/imageButtonM2"
+        android:layout_alignTop="@+id/imageButtonF3"
+        app:srcCompat="@drawable/avatar_m_3"
+        android:onClick="buttonM3"
+        />
+
+</RelativeLayout>

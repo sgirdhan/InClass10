@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sharangirdhani.inclass10.CreateNewContactActivity">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="@string/editNameHint"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/imageView"
+            android:layout_alignStart="@+id/textViewDepartmentLabel" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/editEmailHint"
+            android:inputType="textEmailAddress|textWebEmailAddress"
+            android:layout_below="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="numberSigned"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_alignStart="@+id/editTextEmail"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:contentDescription="d"
+            app:srcCompat="@drawable/select_avatar"
+            android:onClick="avatarClick"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textViewDepartmentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/textDepartmentLabel"
+            android:textColor="@android:color/black"
+            android:layout_above="@+id/radioGroupDepartment"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDepartment"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonSubmit"
+            android:layout_alignStart="@+id/textViewDepartmentLabel">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/department_1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/department_2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/department_3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submitButtonLabel"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_alignStart="@+id/radioGroupDepartment"
+            android:layout_alignEnd="@+id/editTextPhone" />
+
+
+    </RelativeLayout>
+</layout>
+
